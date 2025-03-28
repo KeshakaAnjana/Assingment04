@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>assignment04_case04</title>
+  <link rel="stylesheet" href="assets/lib/normalize.css">
+
+  <style>
+    div{
+      width: 0;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      border: 2px solid red;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      animation-name: animate;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes animate {
+      from{
+        width: 0;
+      }
+      to{
+        width: 400px;
+        opacity: 0;
+        /*border: solid white;*/
+      }
+    }
+  </style>
+
 </head>
 <body>
-$END$
+<div></div>
 </body>
 </html>

@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <title>Assignment04 case 03</title>
+
+    <style>
+        section{
+            width: 800px;
+            height: 600px;
+            background-color: grey;
+            border: 5px solid black;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            overflow: hidden;
+
+        }
+        div {
+            width: 100px;
+            height: 170px;
+            border-radius: 20%;
+            background-color: darkslategray;
+            position: absolute;
+
+            animation-name: move;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate; /* This makes the animation reverse after reaching 100% */
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+                top: 0;
+                left: 0;
+                background-color: #ff253a;
+            }
+            25% {
+                transform: rotate(360deg);
+                top: 0;
+                left: 700px;
+                background-color: #3df500;
+            }
+            50% {
+                transform: rotate(0deg);
+                top: 500px;
+                left: 700px;
+                background-color: gold;
+            }
+            75% {
+                transform: rotate(360deg);
+                top: 500px;
+                left: 0;
+                background-color: darkslategray;
+            }
+            100% {
+                transform: rotate(0deg);
+                top: 0;
+                left: 0;
+                background-color: darkcyan;
+            }
+        }
+    </style>
 </head>
 <body>
-$END$
+<section>
+    <div></div>
+</section>
+
 </body>
 </html>
